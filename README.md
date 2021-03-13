@@ -34,5 +34,6 @@ esbuild ./src/index.jsx --bundle --outfile=out.mjs
 typescript
 
 ```
-esbuild ./src/index.ts --bundle --outfile=out.js
+tsc --noEmit ./src/index.ts \
+ && esbuild ./src/index.ts --bundle --outfile=out.js
 ```
